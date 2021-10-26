@@ -65,4 +65,9 @@ class ProductRepositoryTest {
         productRepositoryImpl.deleteById(110L);
         assertThat(productRepositoryImpl.findById(110L).orElse(null)).isNull();
     }
+
+    @Test
+    void updateAnExistingProductById(){
+        String price = productRepositoryImpl.findById(110L);
+    }
 }
