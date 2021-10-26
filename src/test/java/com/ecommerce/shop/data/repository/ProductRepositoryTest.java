@@ -68,6 +68,9 @@ class ProductRepositoryTest {
 
     @Test
     void updateAnExistingProductById(){
-//        String price = productRepositoryImpl.findById(110L);
+        Product product = productRepositoryImpl.findById(110L).orElse(null);
+
+        assertThat(product).isNotNull();
+
     }
 }
