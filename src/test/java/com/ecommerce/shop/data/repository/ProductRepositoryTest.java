@@ -68,6 +68,6 @@ class ProductRepositoryTest {
 
     @Test
     void updateAnExistingProductById(){
-        String price = productRepositoryImpl.findById(110L);
+//        String price = productRepositoryImpl.findById(110L);
     }
 }
